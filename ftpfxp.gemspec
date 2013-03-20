@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 
 PKG_NAME = %q{ftpfxp}
 PKG_VERSION = %q{0.0.5}
