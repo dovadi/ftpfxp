@@ -8,3 +8,4 @@
 #
 require 'ftpfxp/ftpfxp'
 require 'ftpfxp/ftpfxptls'
+require 'open_ssl/ssl/ssl_socket_patch'

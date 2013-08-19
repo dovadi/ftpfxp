@@ -84,7 +84,7 @@ module Net
 			else
 				voidcmd('AUTH TLS')
 			end
-			@sock = OpenSSL::SSL::SSLSocket.new(@sock, ctx)
+			@sock = OpenSSL::SSL::SSLSocket.new(@sock.io, ctx)
 			@sock.connect
 
 			print "get: #{@sock.peer_cert.to_text}" if @debug_mode
@@ -280,7 +280,7 @@ module Net
 					ctx = create_ssl_context()
 
 					# A secure data connection is required.
-					conn = OpenSSL::SSL::SSLSocket.new(open_socket(host, port), ctx)
+					conn = OpenSSL::SSL::SSLSocket.new(open_socket(host, port).io, ctx)
 				else
 					conn = open_socket(host, port)
 				end
