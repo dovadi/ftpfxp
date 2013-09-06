@@ -7,6 +7,7 @@ module OpenSSL
       
       def shutdown(*args)
         # Ruby 2.0 FTP library expects the IO it's using to implement this method
+        close
       end
     end
   end
