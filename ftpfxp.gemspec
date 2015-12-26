@@ -1,5 +1,6 @@
 
-# require 'rubygems'
+require 'rake'
+require 'rubygems'
 # require 'rubygems/package_task'
 
 PKG_NAME = %q{ftpfxp}
