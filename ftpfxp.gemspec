@@ -1,23 +1,17 @@
+Gem::Specification.new do |s|
+  s.name = "ftpfxp"
+  s.version = "0.0.5"
 
-require 'rake'
-require 'rubygems'
-# require 'rubygems/package_task'
-
-PKG_NAME = %q{ftpfxp}
-PKG_VERSION = %q{0.0.5}
-
-spec = Gem::Specification.new do |s|
-	s.platform = Gem::Platform::RUBY
-	s.summary = %q{Extension to Net::FTP providing FXP and SSL/TLS support}
-	s.description = %q{Extension to Net::FTP providing FXP and SSL/TLS support}
-	s.name = PKG_NAME
-	s.authors = %q{Alex Lee}
-	s.email = %q{alexeen@gmail.com}
-	s.homepage = %q{http://github.org/square/ftpfxp}
-	s.rubyforge_project = PKG_NAME
-	s.version = PKG_VERSION
-	s.require_path = 'lib'
-	s.files = FileList['lib/*.rb', 'lib/*/*.rb', 'samples/*.rb'].to_a
-	s.has_rdoc = true
-	s.extra_rdoc_files = ['README', 'LICENSE.txt', 'COPYING.txt']
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
+  s.authors = ["Alex Lee"]
+  s.date = "2015-12-25"
+  s.description = "Extension to Net::FTP providing FXP and SSL/TLS support"
+  s.email = "alexeen@gmail.com"
+  s.extra_rdoc_files = ["README", "LICENSE.txt", "COPYING.txt"]
+  s.files = ["COPYING.txt", "LICENSE.txt", "README", "lib/ftpfxp.rb", "lib/ftpfxp/ftpfxp.rb", "lib/ftpfxp/ftpfxptls.rb", "samples/cpsv_sample.rb", "samples/sscn_sample.rb"]
+  s.homepage = "http://github.org/square/ftpfxp"
+  s.rubyforge_project = "ftpfxp"
+  s.rubygems_version = "2.5.1"
+  s.summary = "Extension to Net::FTP providing FXP and SSL/TLS support"
 end
