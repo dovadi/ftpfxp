@@ -2,8 +2,8 @@
 # require 'rubygems'
 # require 'rubygems/package_task'
 
-# PKG_NAME = %q{ftpfxp}
-# PKG_VERSION = %q{0.0.5}
+PKG_NAME = %q{ftpfxp}
+PKG_VERSION = %q{0.0.5}
 
 spec = Gem::Specification.new do |s|
 	s.platform = Gem::Platform::RUBY
